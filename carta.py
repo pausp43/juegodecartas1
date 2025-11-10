@@ -1,4 +1,4 @@
-#Clase carta
+#Classe carta
 
 class Carta:
     def __init__(self, palo, valor): #constructor

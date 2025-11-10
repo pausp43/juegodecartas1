@@ -1,7 +1,13 @@
+from ma import Ma
 from carta import Carta
+from baralla import Baralla
 
-nuevacarta = Carta("Corazones", "As")
-print(nuevacarta)
+baralla = Baralla()
+baralla.barallar()
 
-otracarta = Carta("Picas", "Q")
-print(otracarta)
+ma = Ma()
+
+carta_treta = baralla.treure_carta()
+ma.afegir_carta(carta_treta)
+ma.mostrar_cartes()
+print("valor de la ma:", ma.valor)
